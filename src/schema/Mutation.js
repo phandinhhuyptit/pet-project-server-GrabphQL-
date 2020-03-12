@@ -1,13 +1,15 @@
-import { addAuthor } from './Author'
-import { addBook } from './Book'
+import { addAuthor , updateAuthor } from './Author'
+import { addBook, updateBook,deleteBook } from './Book'
 import { GraphQLObjectType } from 'graphql'
-
 
  const Mutation = new GraphQLObjectType({
     name: 'Mutation',
     fields : {
         addAuthor,
         addBook,
+        updateBook,
+        deleteBook,
+        updateAuthor,
     }  
  })
 
